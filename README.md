@@ -1,1 +1,1133 @@
-# Content-Creator
+/* Campaigns Section */
+        .campaigns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amira Muhammad - Words that Sell, Stories that Stick</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #ff1493;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 25px rgba(255, 20, 147, 0.15);
+            border-bottom: 3px solid #ff1493;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff1493;
+            text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.3);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #ff1493;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: #ff1493;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 120px 0;
+            text-align: center;
+            background: #1e90ff;
+            color: #1a1a2e;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                conic-gradient(from 0deg at 30% 70%, #ff1493 0deg, #1e90ff 120deg, #ff1493 240deg, #1e90ff 360deg);
+            animation: rotate 20s linear infinite;
+            opacity: 0.4;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            background: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 20px,
+                    rgba(255, 255, 255, 0.1) 20px,
+                    rgba(255, 255, 255, 0.1) 21px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 20px,
+                    rgba(255, 255, 255, 0.1) 20px,
+                    rgba(255, 255, 255, 0.1) 21px
+                );
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 
+                3px 3px 0px #ff1493,
+                6px 6px 0px #1a1a2e,
+                9px 9px 0px #ff1493;
+            color: white;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease 0.2s both;
+            background: #1a1a2e;
+            color: #1e90ff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 3px solid #ff1493;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff1493;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 900;
+            transition: all 0.3s ease;
+            border: 4px solid #1a1a2e;
+            animation: fadeInUp 1s ease 0.4s both;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+            box-shadow: 
+                0 0 0 4px #ff1493,
+                0 0 0 8px #1a1a2e,
+                0 15px 35px rgba(255, 20, 147, 0.4);
+        }
+
+        .cta-button:hover {
+            background: #1e90ff;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 
+                0 0 0 4px #1e90ff,
+                0 0 0 8px #1a1a2e,
+                0 20px 40px rgba(30, 144, 255, 0.6);
+            animation: bounce 0.6s ease;
+        }
+
+        /* Main Content */
+        main {
+            background: white;
+            min-height: 100vh;
+        }
+
+        .section {
+            padding: 80px 0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #ff1493;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #ff1493;
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .profile-placeholder {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ff1493;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(255, 20, 147, 0.3);
+            border: 4px solid white;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff1493;
+            display: block;
+        }
+
+        /* Industries Section */
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .industry-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-10px);
+            border-color: #ff1493;
+            box-shadow: 0 20px 40px rgba(255, 20, 147, 0.2);
+        }
+
+        .industry-icon {
+            width: 60px;
+            height: 60px;
+            background: #ff1493;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 8px 20px rgba(255, 20, 147, 0.3);
+        }
+
+        /* Campaign Cards - More Dynamic */
+        .campaign-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 
+                0 15px 35px rgba(0,0,0,0.1),
+                0 5px 15px rgba(139, 92, 246, 0.1);
+            transition: all 0.4s ease;
+            border: 4px solid transparent;
+            position: relative;
+        }
+
+        .campaign-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b9d, #8b5cf6, #00d4ff);
+            z-index: 1;
+        }
+
+        .campaign-card:hover {
+            transform: translateY(-15px) rotate(-1deg);
+            border-color: #8b5cf6;
+            box-shadow: 
+                0 25px 50px rgba(139, 92, 246, 0.3),
+                0 15px 35px rgba(255, 107, 157, 0.2);
+        }
+
+        .campaign-header {
+            background: 
+                linear-gradient(135deg, #1a1a2e 0%, #2d1b69 100%);
+            color: white;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .campaign-header::after {
+            content: '⚡';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.5rem;
+            opacity: 0.3;
+        }
+
+        .campaign-title {
+            font-size: 1.4rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .campaign-client {
+            background: #1e90ff;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+
+        .campaign-content {
+            padding: 2rem;
+        }
+
+        .campaign-description {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .campaign-metrics {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ff1493;
+            display: block;
+            text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.3);
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: #1a1a2e;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .campaign-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .view-link {
+            flex: 1;
+            background: linear-gradient(45deg, #ff1493, #1e90ff);
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-align: center;
+            font-weight: 900;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 3px solid #1a1a2e;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .view-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .view-link:hover::before {
+            left: 100%;
+        }
+
+        .view-link:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 15px 30px rgba(255, 20, 147, 0.4),
+                0 8px 20px rgba(30, 144, 255, 0.3);
+            border-color: #ff1493;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .skills-category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .skill-item {
+            background: white;
+            margin-bottom: 1rem;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #ff1493;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 20, 147, 0.1);
+        }
+
+        .skill-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 25px rgba(255, 20, 147, 0.2);
+            background: #fff0f8;
+        }
+
+        /* Coming Soon Sections */
+        .coming-soon {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .coming-soon h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #ff1493;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+        }
+
+        .contact-content {
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: #ff1493;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Industry specific colors */
+        .education { border-left-color: #ff1493; }
+        .healthcare { border-left-color: #1e90ff; }
+        .tech { border-left-color: #ff1493; }
+        .engineering { border-left-color: #1e90ff; }
+
+        /* Add more dynamic animations */
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 60%, 100% { transform: translateY(-5px) scale(1.05); }
+            40% { transform: translateY(-10px) scale(1.08); }
+            80% { transform: translateY(-3px) scale(1.03); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Add floating elements */
+        .hero-decorations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .floating-element {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-1 {
+            background: #ff1493;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-2 {
+            background: #1e90ff;
+            top: 30%;
+            right: 15%;
+            animation-delay: 1s;
+        }
+
+        .floating-3 {
+            background: #ff1493;
+            bottom: 30%;
+            left: 20%;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Amira Muhammad Hussein</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#campaigns">Campaigns</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#unpublished">Unpublished</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-decorations">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+        </div>
+        <div class="container">
+            <h1>Crafting Words That Convert</h1>
+            <p class="hero-subtitle"> Senior Copywriter | Turning Ideas Into Impact </p>
+            <a href="#campaigns" class="cta-button">🚀 Explore More! </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Words That Work, Stories That Sell</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="profile-placeholder">AH</div>
+                    </div>
+                    <div class="about-text">
+                        <p>As a proud Ain Shams Science graduate, I've proven that <strong>"a science graduate can do anything"</strong> and my copywriting journey is living proof!</p>
+                        
+                        <p>From healthcare to engineering, beauty to e-commerce, I've mastered the art of speaking every industry's language. My superpower? <strong>Blending creativity with strategy</strong> to craft messages that don't just inform  they inspire action.</p>
+                        
+                        <p>I don't just write copy; I shape narratives that make brands unforgettable. Every word counts, every campaign tells a story, and every client gets content that converts.</p>
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Industries Mastered</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Successful Campaigns</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section id="industries" class="section" style="background: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">Industries I Speak Fluently</h2>
+                <div class="industries-grid">
+                    <div class="industry-card education">
+                        <div class="industry-icon">🎓</div>
+                        <h3>Education & Training</h3>
+                        <p><strong>ORing Training,TET, Engineering House </strong></p>
+                        <p>Transforming complex technical concepts into engaging educational content. From maintenance engineering to marketing courses  making learning irresistible.</p>
+                    </div>
+                    <div class="industry-card healthcare">
+                        <div class="industry-icon">❤️</div>
+                        <h3>Healthcare & Medical</h3>
+                        <p><strong>Dr. Sameh Allam - Cardiology</strong></p>
+                        <p>Crafting educational medical content that builds trust and generates qualified leads through organic social media strategies.</p>
+                    </div>
+                    <div class="industry-card tech">
+                        <div class="industry-icon">💻</div>
+                        <h3>Technology & Engineering</h3>
+                        <p><strong>Comuworld Systems </strong></p>
+                        <p>Bridging the gap between complex technical solutions and clear, compelling communication that drives business results.</p>
+                    </div>
+                    <div class="industry-card">
+                        <div class="industry-icon">✨</div>
+                        <h3>Beauty & Lifestyle</h3>
+                        <p><strong>Various Beauty Brands</strong></p>
+                        <p>Creating aspirational content that connects with audiences on an emotional level while driving conversions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campaigns Section -->
+        <section id="campaigns" class="section">
+            <div class="container">
+                <h2 class="section-title">Campaign Success Stories</h2>
+                <div class="campaigns-grid">
+                    <!-- Maintenance Chess Campaign -->
+                    <div class="campaign-card">
+                        <div class="campaign-header">
+                            <div class="campaign-title">Maintenance Chess Campaign</div>
+                            <div class="campaign-client">ORing Training</div>
+                        </div>
+                        <div class="campaign-content">
+                            <p class="campaign-description">
+                                Revolutionary approach to maintenance education using chess metaphors. Turned complex engineering concepts into an engaging offline workshop experience.
+                            </p>
+                            <div class="campaign-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">928</span>
+                                    <span class="metric-label">Registrations</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">185%</span>
+                                    <span class="metric-label">Over Target</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">33</span>
+                                    <span class="metric-label">Attendees</span>
+                                </div>
+                            </div>
+                            <div class="campaign-links">
+                                <a href="https://web.facebook.com/photo/?fbid=246642334782467&set=a.116498034463565" class="view-link" target="_blank">View Campaign</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MEP Lead Generation -->
+                    <div class="campaign-card">
+                        <div class="campaign-header">
+                            <div class="campaign-title">MEP Course Lead Generation</div>
+                            <div class="campaign-client">بيت المهندسين</div>
+                        </div>
+                        <div class="campaign-content">
+                            <p class="campaign-description">
+                                Automated lead generation campaign for engineering courses using strategic chatbot flows and compelling social media copy.
+                            </p>
+                            <div class="campaign-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">500+</span>
+                                    <span class="metric-label">Leads Generated</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">75%</span>
+                                    <span class="metric-label">Bot Completion Rate</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">Organic</span>
+                                    <span class="metric-label">Reach</span>
+                                </div>
+                            </div>
+                            <div class="campaign-links">
+                                <a href="https://web.facebook.com/share/p/19pdQ2ovdP/" class="view-link" target="_blank">View Campaign</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medical Education Campaign -->
+                    <div class="campaign-card">
+                        <div class="campaign-header">
+                            <div class="campaign-title">Cardiology Education Series</div>
+                            <div class="campaign-client">Dr. Sameh Allam</div>
+                        </div>
+                        <div class="campaign-content">
+                            <p class="campaign-description">
+                                Comprehensive social media strategy for cardiology practice, combining educational content with lead magnets for free consultations.
+                            </p>
+                            <div class="campaign-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">2K+</span>
+                                    <span class="metric-label">Monthly Reach</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">15%</span>
+                                    <span class="metric-label">Engagement Rate</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">50+</span>
+                                    <span class="metric-label">Qualified Leads</span>
+                                </div>
+                            </div>
+                            <div class="campaign-links">
+                                <a href="https://web.facebook.com/photo/?fbid=413217157160201&set=pcb.413220410493209" class="view-link" target="_blank">View Campaign</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Company Campaign -->
+                    <div class="campaign-card">
+                        <div class="campaign-header">
+                            <div class="campaign-title">Tech Solutions Positioning</div>
+                            <div class="campaign-client">Comuworld Systems</div>
+                        </div>
+                        <div class="campaign-content">
+                            <p class="campaign-description">
+                                Strategic content creation for technology solutions company, focusing on clear communication of complex technical services.
+                            </p>
+                            <div class="campaign-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">40%</span>
+                                    <span class="metric-label">Engagement Boost</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">25+</span>
+                                    <span class="metric-label">B2B Inquiries</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">3x</span>
+                                    <span class="metric-label">Content Performance</span>
+                                </div>
+                            </div>
+                            <div class="campaign-links">
+                                <a href="https://web.facebook.com/photo.php?fbid=122110003328056135&set=pb.61551684072327.-2207520000&type=3" class="view-link" target="_blank">View Campaign</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section" style="background: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">The Arsenal Behind Every Great Copy</h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Technical Mastery</h3>
+                        <div class="skill-item">
+                            <strong>Script Writing</strong> - From concept to conversion
+                        </div>
+                        <div class="skill-item">
+                            <strong>Funnel Design</strong> - Mapping customer journeys
+                        </div>
+                        <div class="skill-item">
+                            <strong>Conversion Copywriting</strong> - Words that sell
+                        </div>
+                        <div class="skill-item">
+                            <strong>Deep Research</strong> - Understanding audiences inside out
+                        </div>
+                        <div class="skill-item">
+                            <strong>SEO Optimization</strong> - Visibility meets persuasion
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Strategic Edge</h3>
+                        <div class="skill-item">
+                            <strong>Cross-Industry Adaptation</strong> - Speaking every market's language
+                        </div>
+                        <div class="skill-item">
+                            <strong>Performance Analysis</strong> - Data-driven optimization
+                        </div>
+                        <div class="skill-item">
+                            <strong>Brand Voice Development</strong> - Creating distinctive personalities
+                        </div>
+                        <div class="skill-item">
+                            <strong>Campaign Strategy</strong> - From ideation to execution
+                        </div>
+                        <div class="skill-item">
+                            <strong>Multilingual Copy</strong> - Arabic & English expertise
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unpublished Work Section -->
+        <section id="unpublished" class="section">
+            <div class="container">
+                <h2 class="section-title">🚀 Unreleased Gems</h2>
+                
+                <!-- Unpublished Campaign -->
+                <div class="campaigns-grid">
+                    <div class="campaign-card" style="max-width: 800px; margin: 0 auto;">
+                        <div class="campaign-header">
+                            <div class="campaign-title">Strategic Transformation Launch</div>
+                            <div class="campaign-client">Dr. Medhat Yassin</div>
+                        </div>
+                        <div class="campaign-content">
+                            <div style="background: #fff0f8; padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem; border-left: 4px solid #ff1493;">
+                                <strong>🎯 Campaign Status:</strong> Production Halted - Unreleased<br>
+                                <strong>🎪 Campaign Type:</strong> New Service Launch<br>
+                                <strong>🎭 Target:</strong> Mid Business Owners & Stakeholders
+                            </div>
+                            
+                            <p class="campaign-description">
+                                <strong>"Ready For Strategic Transformation!"</strong> - A comprehensive campaign designed to launch a revolutionary consultation service targeting mid-business explosive growth. This campaign utilized advanced sales psychology and strategic messaging to transform stable profits into exponential growth.
+                            </p>
+                            
+                            <div style="background: #f0f9ff; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border-left: 4px solid #1e90ff;">
+                                <h4 style="color: #1e90ff; margin-bottom: 1rem;">🧠 Strategic Framework:</h4>
+                                <p><strong>Core Message:</strong> "تحويل البيزنس بتاعك من الـ stable profit to Explosive Growth"</p>
+                                <p><strong>Hook:</strong> 28 years experience + 200+ companies served</p>
+                                <p><strong>Pain Point:</strong> Market changes making old tactics ineffective</p>
+                                <p><strong>Solution:</strong> "Strategic Transformational Kit" with 5-year adaptability</p>
+                                <p><strong>CTA:</strong> Free Assessment + Strategic Planning Session</p>
+                            </div>
+
+                            <div class="campaign-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">3</span>
+                                    <span class="metric-label">Copy Variations</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2</span>
+                                    <span class="metric-label">Platforms</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">9→4</span>
+                                    <span class="metric-label">Months Reduction</span>
+                                </div>
+                            </div>
+
+                            <div style="background: #f8f4ff; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
+                                <h4 style="color: #ff1493; margin-bottom: 1rem;">💎 Key Copywriting Elements Used:</h4>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                                    <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid #ff1493;">
+                                        <strong>Claims & Proofs</strong>
+                                    </div>
+                                    <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid #1e90ff;">
+                                        <strong>Pain & Gain</strong>
+                                    </div>
+                                    <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid #ff1493;">
+                                        <strong>Trust Building</strong>
+                                    </div>
+                                    <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid #1e90ff;">
+                                        <strong>Sales Pitch</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="background: #fffbf0; padding: 1.5rem; border-radius: 10px; border: 2px dashed #ff1493;">
+                                <h4 style="color: #ff1493; margin-bottom: 1rem;">📝 Sample Copy Extract:</h4>
+                                <p style="font-style: italic; color: #1a1a2e; line-height: 1.8;">
+                                    "بعد خبرة 28 سنة في البيزنس وتقديم استشارات لأكتر من 200 شركة لقيت إن الحاجة الثابتة في السوق إنه.. 'دايما بيتغير' 
+                                    يعني الـ tactics اللي كنت بتعملها من سنة وبتحقق بيها Explosive Growth لو عملتها دلوقتي بالعافية هتخلي البيزنس بتاعك stable..."
+                                </p>
+                            </div>
+                            
+                            <div class="campaign-links" style="margin-top: 2rem;">
+                                <div style="background: #1a1a2e; color: white; padding: 15px 25px; border-radius: 30px; text-align: center; font-weight: 900; text-transform: uppercase; letter-spacing: 1px;">
+                                    🔒 Confidential Project - Production Halted
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Unpublished Work Teaser -->
+                <div style="margin-top: 3rem; text-align: center;">
+                    <div style="background: linear-gradient(45deg, #ff1493, #1e90ff); color: white; padding: 2rem; border-radius: 20px; max-width: 600px; margin: 0 auto;">
+                        <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">✨ More Hidden Treasures</h3>
+                        <p>Strategy breakdowns, conversion analysis, and creative concepts that never saw the light of day. Each piece tells a story of strategic thinking and creative problem-solving.</p>
+                        <p style="margin-top: 1rem; font-weight: bold;">🔓 Unlock full access to discuss confidential projects in consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title" style="color: white;">Let's Create Something Amazing</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ready to turn your brand's story into results? Let's talk.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <div>Email</div>
+                                <div>amirahusseinali@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <div>Phone</div>
+                                <div>+201092206474</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animate sections on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add active nav link highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('.section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add click analytics (placeholder)
+        document.querySelectorAll('.view-link').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Campaign viewed:', this.textContent);
+                // Here you could add actual analytics tracking
+            });
+        });
+    </script>
+</body>
+</html>
