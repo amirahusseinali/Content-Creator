@@ -1,0 +1,194 @@
+strong>Brand Voice Development</strong> - Creating distinctive personalities
+                        </div>
+                        <div class="skill-item">
+                            <strong>Campaign Strategy</strong> - From ideation to execution
+                        </div>
+                        <div class="skill-item">
+                            <strong>Multilingual Copy</strong> - Arabic & English expertise
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unpublished Work Section -->
+        <section id="unpublished" class="section">
+            <div class="container">
+                <h2 class="section-title">🚀 Unreleased Gems</h2>
+                
+                <!-- Unpublished Campaign -->
+                <div class="campaigns-grid">
+                    <div class="campaign-card" style="max-width: 800px; margin: 0 auto;">
+                        <div class="campaign-header">
+                            <div class="campaign-title">Strategic Transformation Launch</div>
+                            <div class="campaign-client">Dr. Medhat Yassin</div>
+                        </div>
+                        <div class="campaign-content">
+                            <div style="background: #fff0f8; padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem; border-left: 4px solid #ff69b4;">
+                                <strong>🎯 Campaign Status:</strong> Production Halted - Unreleased<br>
+                                <strong>🎪 Campaign Type:</strong> New Service Launch<br>
+                                <strong>🎭 Target:</strong> Mid Business Owners & Stakeholders
+                            </div>
+                            
+                            <p class="campaign-description">
+                                <strong>"Ready For Strategic Transformation!"</strong> - A comprehensive campaign designed to launch a revolutionary consultation service targeting mid-business explosive growth. This campaign utilized advanced sales psychology and strategic messaging to transform stable profits into exponential growth.
+                            </p>
+                            
+                            <div style="background: #f0f9ff; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border-left: 4px solid #1e90ff;">
+                                <h4 style="color: #1e90ff; margin-bottom: 1rem;">🧠 Strategic Framework:</h4>
+                                <p><strong>Core Message:</strong> "تحويل البيزنس بتاعك من الـ stable profit to Explosive Growth"</p>
+                                <p><strong>Hook:</strong> 28 years experience + 200+ companies served</p>
+                                <p><strong>Pain Point:</strong> Market changes making old tactics ineffective</p>
+                                <p><strong>Solution:</strong> "Strategic Transformational Kit" with 5-year adaptability</p>
+                                <p><strong>CTA:</strong> Free Assessment + Strategic Planning Session</p>
+                            </div>
+
+                            <div class="campaign-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">3</span>
+                                    <span class="metric-label">Copy Variations</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2</span>
+                                    <span class="metric-label">Platforms</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">9→4</span>
+                                    <span class="metric-label">Months Reduction</span>
+                                </div>
+                            </div>
+
+                            <div style="background: #f8f4ff; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
+                                <h4 style="color: #ff69b4; margin-bottom: 1rem;">💎 Key Copywriting Elements Used:</h4>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                                    <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid #ff69b4;">
+                                        <strong>Claims & Proofs</strong>
+                                    </div>
+                                    <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid #1e90ff;">
+                                        <strong>Pain & Gain</strong>
+                                    </div>
+                                    <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid #ff69b4;">
+                                        <strong>Trust Building</strong>
+                                    </div>
+                                    <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid #1e90ff;">
+                                        <strong>Sales Pitch</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="background: #fffbf0; padding: 1.5rem; border-radius: 10px; border: 2px dashed #ff69b4;">
+                                <h4 style="color: #ff69b4; margin-bottom: 1rem;">📝 Sample Copy Extract:</h4>
+                                <p style="font-style: italic; color: #1a1a2e; line-height: 1.8;">
+                                    "بعد خبرة 28 سنة في البيزنس وتقديم استشارات لأكتر من 200 شركة لقيت إن الحاجة الثابتة في السوق إنه.. 'دايما بيتغير' 
+                                    يعني الـ tactics اللي كنت بتعملها من سنة وبتحقق بيها Explosive Growth لو عملتها دلوقتي بالعافية هتخلي البيزنس بتاعك stable..."
+                                </p>
+                            </div>
+                            
+                            <div class="campaign-links" style="margin-top: 2rem;">
+                                <div style="background: #1a1a2e; color: white; padding: 15px 25px; border-radius: 30px; text-align: center; font-weight: 900; text-transform: uppercase; letter-spacing: 1px;">
+                                    🔒 Confidential Project - Production Halted
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Unpublished Work Teaser -->
+                <div style="margin-top: 3rem; text-align: center;">
+                    <div style="background: linear-gradient(45deg, #ff69b4, #1e90ff); color: white; padding: 2rem; border-radius: 20px; max-width: 600px; margin: 0 auto;">
+                        <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">✨ More Hidden Treasures</h3>
+                        <p>Strategy breakdowns, conversion analysis, and creative concepts that never saw the light of day. Each piece tells a story of strategic thinking and creative problem-solving.</p>
+                        <p style="margin-top: 1rem; font-weight: bold;">🔓 Unlock full access to discuss confidential projects in consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title" style="color: white;">Let's Create Something Amazing</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ready to turn your brand's story into results? Let's talk.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <div>Email</div>
+                                <div>amirahusseinali@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <div>Phone</div>
+                                <div>+201092206474</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animate sections on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add active nav link highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('.section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add click analytics (placeholder)
+        document.querySelectorAll('.view-link').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Campaign viewed:', this.textContent);
+                // Here you could add actual analytics tracking
+            });
+        });
+    </script>
+</body>
+</html>
